@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Crud</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <!-- form  -->
+    <form id="form" class="input">
+      <input type="text" name="name" placeholder="Mashina nomi" />
+      <textarea
+        type="text"
+        name="description"
+        placeholder="Mashina uchun izoh!"
+      ></textarea>
+      <button class="add-css">Qoshish</button>
+    </form>
+    <h3 id="loader" class="loader-css">Loading...</h3>
+    <ul id="container" class="container-css"></ul>
+    <ul id="toastContainer"></ul>
+    <template id="cardTemplate">
+      <li class="card">
+        <h2 class="h2-css"></h2>
+        <p class="p-css"></p>
+        <button class="delete-js">Delete</button>
+      </li>
+    </template>
+    <script src="./js/app.js" type="module"></script>
+  </body>
+</html>

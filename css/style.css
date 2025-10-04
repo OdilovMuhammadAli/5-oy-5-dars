@@ -1,0 +1,97 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: #bec0c1;
+}
+.container-css {
+  max-width: 1200px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  padding: 20px;
+  justify-content: center;
+}
+#loader {
+  display: none;
+}
+#toastContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+.message {
+  border: 1px solid black;
+  padding: 5px;
+}
+
+.input {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 1px solid #000000;
+  outline: none;
+  transition: border 0.2s ease;
+  background-color: rgb(174, 174, 174);
+}
+
+.input:focus {
+  border: 1px solid #3498db;
+}
+.add-css {
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+  width: 60px;
+  height: 30px;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  box-shadow: none;
+}
+.add-css:hover {
+  background-color: rgb(194, 9, 9);
+  color: #e2e2e2;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 12px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.p-css {
+  font-size: 15px;
+  color: #555;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.delete-js {
+  background-color: rgb(202, 195, 195);
+  cursor: pointer;
+  width: 70px;
+  height: 40px;
+  border-radius: 6px;
+  color: rgb(0, 0, 0);
+  transition: background-color 0.2s ease-in-out;
+  border: none;
+  box-shadow: none;
+}
+
+.delete-js:hover {
+  background-color: rgb(203, 50, 50);
+  color: #e2e2e2;
+}
